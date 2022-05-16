@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../estilos/styles.css" rel="stylesheet">
+    <title> JMG Apparel </title> 
+</head>
+
+<body>
+    <header>
+        <nav class="nav-menu">
+          <input type="checkbox" id="burgercheckmenu">
+          <label for="burgercheckmenu"><img src="../images/bar-button.png"  class="header__menu"></label>
+          <nav class="nav-menu-container">
+            <ul class="header__nav--label--ul">
+              <li><a href="../index.html" class="header__menu--ul--a">INICIO</a></li>
+              <li><a href="../pages/productos.html" class="header__menu--ul--a">PRODUCTOS</a></li>
+              <li><a href="../pages/locales.html" class="header__menu--ul--a">LOCALES</a></li>
+              <li><a href="../pages/contactanos.html" class="header__menu--ul--a">CONTACTANOS</a></li>
+            </ul>
+          </nav>
+        </nav>
+
+        <nav class="nav-logo">
+            <a href="../index.html">
+              <img src="../images/logo_mango.png"  class="header__logo">
+            </a>
+        </nav>
+
+        <div class="nav-login">
+            <img src="../images/user-clip.png" class="header__login--right">
+            <img src="../images/carrito.png" id="carrito" class="header__login--right">  
+        </div>
+          
+    </header>
+    
+
+    <main class="main-productos">
+        <div>
+            <p class="main__p--envios">ENVIOS GRATIS A PARTIR DE $7500</p>
+        </div>
+
+        <div class="main-barra-seccionenvio">                       <!-- BARRA SECCION Y ORDEN-->         
+            <h1 class="h1__productos">PRODUCTOS</h1>
+            <div class="main__nav--filtro">
+                <p class="p__filtro">| Inicio/Productos</p>
+                <form class="main__nav--filtro">
+                    <select name="Orden de producto">
+                        <option value="Destacados">Destacados</option>
+                        <option value="Precio mas alto">Precio mas alto</option>
+                        <option value="Precio mas bajo">Precio mas bajo</option>
+                        <option value="Producto nuevo">Nuevos productos</option>
+                    </select>
+                </form>
+            </div>
+            
+        </div>
+
+        <div>       <!-- QUIERO HACERLO UN MENU DESPLEGABLE PARA MOBILE -->
+            <input type="checkbox" id="checkfiltros">
+            <label for="checkfiltros">
+                <p class="ordenar-filtrar">ORDENAR Y FILTRAR</p>  
+            </label>    
+        </div>
+
+        <section class="main__section">
+            <aside class="aside__products"> <!-- BARRA FILTROS -->
+
+                <div class="main__aside--filtro">           <!--  menu de orden web  -->
+                    <form class="main__aside--filtro">
+                        <select name="Orden de producto">
+                            <option value="Destacados">Destacados</option>
+                            <option value="Precio mas alto">Precio mas alto</option>
+                            <option value="Precio mas bajo">Precio mas bajo</option>
+                            <option value="Producto nuevo">Nuevos productos</option>
+                        </select>
+                    </form>
+                </div>
+                
+                <div>       <!-- CATEGORIAS -->
+                    <p>CATEGORIAS</p>
+                    <ul>
+                        <a href="#"><li>NUEVA TEMPORADA</li></a>
+                        <a href="#"><li>INDUMENTARIA</li></a>
+                        <a href="#"><li>CALZADOS</li></a>
+                        <a href="#"><li>ACCESORIOS</li></a>
+                        <a href="#"><li class="main_nav--section--sale">SALE</li></a>
+                    </ul>
+                    <hr>
+                </div>
+
+                <div>   <!-- PRECIOS -->
+                    <p>PRECIO</p>
+                    <ul>
+                        <a href="#"><li>HASTA $1999</li></a>
+                        <a href="#"><li>DE $1999 A $4999</li></a>
+                        <a href="#"><li>DE $5000 A $9999</li></a>
+                        <a href="#"><li>DE $10000 A 14999</li></a>
+                        <a href="#"><li>MAS DE $15000</li></a>
+                    </ul>
+                    <hr>
+                </div>
+
+                <div>           <!-- COLORES -->
+                    <p>COLOR</p>   <!--  QUIERO HACER UN FILTRO CON CUADRADOS DE COLORES    -->
+                    <a href="#"><span>amarillo</span></a>
+                    <a href="#"><span>verde</span></a>
+                    <a href="#"><span>rojo</span></a>
+                    <a href="#"><span>azul</span></a>
+                    <a href="#"><span>violeta</span></a>
+                    <a href="#"><span>negro</span></a>
+                </div>
+
+            </aside>
+
+            <article class="main__section--article">                           <!-- PRODUCTOS -->
+                
+                <nav class="cuadro-product-img-text-product">
+                    <a href="#">
+                        <div class="nav-product-image-product" style="background-image: url(../images/product1.jpg);">
+                        </div>
+                        <div class="nav-product-desc-product">
+                            <p class="product-tittle">CAMPERA DE JEAN</p>
+                            <p class="product-desc">Rancher Trucker Jacket es la reinvención de un clásico; tiene corte amplio.</p>
+                            <p class="product-price">$0000</p>
+                            <p class="product-fee">12 cuotas de $00</p>
+                        </div>
+                    </a>
+                </nav>
+
+                <nav class="cuadro-product-img-text-product">
+                    <a href="#">
+                        <div class="nav-product-image-product" style="background-image: url(../images/product2.jpg);">
+                        </div>
+                        <div class="nav-product-desc-product">
+                            <p class="product-tittle">BORCEGOS</p>
+                            <p class="product-desc">Rancher Trucker Jacket es la reinvención de un clásico; tiene corte amplio.</p>
+                            <p class="product-price">$0000</p>
+                            <p class="product-fee">12 cuotas de $00</p>
+                        </div>
+                    </a>
+                </nav>
+
+                <nav class="cuadro-product-img-text-product">
+                    <a href="#">
+                        <div class="nav-product-image-product" style="background-image: url(../images/product3.jpg);">
+                        </div>
+                        <div class="nav-product-desc-product">
+                            <p class="product-tittle">TAPADO BLANCO</p>
+                            <p class="product-desc">Rancher Trucker Jacket es la reinvención de un clásico; tiene corte amplio.</p>
+                            <p class="product-price">$0000</p>
+                            <p class="product-fee">12 cuotas de $00</p>
+                        </div>
+                    </a>
+                </nav>
+
+                <nav class="cuadro-product-img-text-product">
+                    <a href="#">
+                        <div class="nav-product-image-product" style="background-image: url(../images/product4.jpg);">
+                        </div>
+                        <div class="nav-product-desc-product">
+                            <p class="product-tittle">EL MISMO TAPADO BLANCO</p>
+                            <p class="product-desc">Rancher Trucker Jacket es la reinvención de un clásico; tiene corte amplio.</p>
+                            <p class="product-price">$0000</p>
+                            <p class="product-fee">12 cuotas de $00</p>
+                        </div>
+                    </a>
+                </nav>
+
+                <nav class="cuadro-product-img-text-product">
+                    <a href="#">
+                        <div class="nav-product-image-product" style="background-image: url(../images/product5.jpg);">
+                        </div>
+                        <div class="nav-product-desc-product">
+                            <p class="product-tittle">CAMPERA ROJA</p>
+                            <p class="product-desc">Rancher Trucker Jacket es la reinvención de un clásico; tiene corte amplio.</p>
+                            <p class="product-price">$0000</p>
+                            <p class="product-fee">12 cuotas de $00</p>
+                        </div>
+                    </a>
+                </nav>
+
+                <nav class="cuadro-product-img-text-product">
+                    <a href="#">
+                        <div class="nav-product-image-product" style="background-image: url(../images/product6.jpg);">
+                        </div>
+                        <div class="nav-product-desc-product">
+                            <p class="product-tittle">ZAPATOS</p>
+                            <p class="product-desc">Rancher Trucker Jacket es la reinvención de un clásico; tiene corte amplio.</p>
+                            <p class="product-price">$0000</p>
+                            <p class="product-fee">12 cuotas de $00</p>
+                        </div>
+                    </a>
+                </nav>
+
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer__section">
+
+            <nav class="footer__section--nav--navegacion">
+                <ul>
+                    <li><a href="../index.html" class="footer__section--a">Inicio</a></li>
+                    <li><a href="../pages/productos.html" class="footer__section--a">Productos</a></li>
+                    <li><a href="../pages/locales.html" class="footer__section--a">Locales</a></li>
+                    <li><a href="../pages/contactanos.html" class="footer__section--a">Contactanos</a></li>                 
+                </ul>
+            </nav>
+            <nav class="footer__section--nav--redes">
+                <p class="footer__ul--titulo">Redes Sociales</p>
+                <ul class="footer__nolist--row">
+                    <li><a href="https://www.facebook.com/" target="_blank" class="footer__section--a"><img src="../images/fbk-icon.png" alt="Nuestro facebook" class="footer__section--icons"></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank" class="footer__section--a"><img src="../images/insta-icon.png" alt="Nuestro instagram" class="footer__section--icons"></a></li>
+                </ul>
+            </nav>
+            <div class="footer__section--nav--pagos">
+                <p class="footer__ul--titulo">Medios de pago</p>
+                <ul class="footer__nolist--row">
+                    <li><img src="../images/visa.png" alt="Visa" class="footer__section--icons"></li>
+                    <li><img src="../images/mastercard.png" alt="Mastercard" class="footer__section--icons"></li>
+                    <li><img src="../images/meli.png" alt="Mercado pago" class="footer__section--icons"></li>
+                </ul>
+            </div>
+            <div class="footer__section--nav--envio">
+                <p class="footer__ul--titulo">Formas de envio</p>
+                <ul class="footer__nolist--row">
+                    <li><img src="../images/correoarg.png" alt="Correo argentino" class="footer__section--icons"></li>
+                    <li><img src="../images/motomensaje.png" alt="Motomensajeria" class="footer__section--icons"></li>
+                    <li><img src="../images/encomienda.png" alt="Encomienda" class="footer__section--icons"></li>
+                </ul>
+            </div>
+        </section>
+        
+        <div class="footer__copy">
+            Copyright Juan Manuel Gonzalez - 2022
+        </div>
+    </footer>
+
+</body>
+</html>
