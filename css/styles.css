@@ -4,56 +4,228 @@
   box-sizing: border-box; }
 
 /*  CSS PARA MOBILE */
-header {
-  display: grid;
-  grid-template-columns: 10% 70% 20%;
-  grid-template-rows: 10vw;
-  width: 100%;
-  height: 10vw;
-  border: black solid 1px; }
-  header a {
-    text-decoration: none;
-    color: none;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  header div {
+body {
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  height: 100%; }
+  body header {
+    display: grid;
+    grid-template-columns: 10% 70% 20%;
+    grid-template-rows: 10vw;
     width: 100%;
-    height: 100%; }
-  header .menuHamb-Lista {
-    /* menu hamburguesa */
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    header .menuHamb-Lista img {
-      width: 50%;
-      height: 50%; }
-    header .menuHamb-Lista nav {
-      display: none; }
-  header .logoHeader {
-    /* Logo */
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    header .logoHeader img {
-      width: 12%; }
-  header .loginCarrito {
-    /* LogIn y Carrito */
+    height: 10vw;
+    border: black solid 1px; }
+    body header a {
+      text-decoration: none;
+      color: none;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    body header div {
+      width: 100%;
+      height: 100%; }
+    body header .menuHamb-Lista {
+      /* menu hamburguesa */
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      body header .menuHamb-Lista img {
+        width: 50%;
+        height: 50%; }
+      body header .menuHamb-Lista nav {
+        display: none; }
+    body header .logoHeader {
+      /* Logo */
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      body header .logoHeader img {
+        width: 12%; }
+    body header .loginCarrito {
+      /* LogIn y Carrito */
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      body header .loginCarrito img {
+        width: 40px;
+        padding: 2px; }
+  body main {
+    width: 100%;
+    height: 500vw; }
+    body main .main__freeship {
+      display: flex;
+      justify-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: white;
+      background-color: black;
+      padding: 2%;
+      font-weight: bold;
+      font-family: prohibition,sans-serif;
+      font-size: 1.2rem;
+      font-style: normal; }
+    body main .main__imgSlide {
+      width: 100%;
+      height: 80vh;
+      text-decoration: none;
+      background-size: cover;
+      background-position-x: 50%;
+      background-position-y: 50%; }
+      body main .main__imgSlide form {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+    body main .main__frase {
+      display: flex;
+      justify-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: #030303;
+      padding: 2%;
+      font-weight: bold;
+      font-family: prohibition,sans-serif;
+      font-size: 1.2rem;
+      font-style: normal;
+      background: #ffe1fc;
+      background: linear-gradient(180deg, white 15%, #ffe1fc 43%, white 85%); }
+    body main section {
+      /* CATEGORIAS */
+      max-width: 100%;
+      height: 150vh;
+      display: flex;
+      flex-direction: row;
+      flex-grow: 1;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center; }
+      body main section a {
+        min-width: 40%;
+        min-height: 50%;
+        flex-grow: 1;
+        flex-basis: 0;
+        height: 30%;
+        text-decoration: none;
+        background-size: cover;
+        background-position: center;
+        margin: 1%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        body main section a p {
+          background-color: white;
+          padding: 3% 5% 3% 5%;
+          font-size: 70%;
+          font-family: anton,sans-serif;
+          font-weight: 400;
+          font-style: normal; }
+        body main section a .p_sale {
+          color: red;
+          background-color: white;
+          padding: 3% 5% 3% 5%;
+          font-size: 70%;
+          font-family: anton,sans-serif;
+          font-weight: 400;
+          font-style: normal; }
+    body main h1 {
+      /* TITULO Productos destacados */
+      font-size: 1.5rem;
+      text-align: center;
+      padding: 3%; }
+    body main article {
+      /* Productos destacados */
+      width: 100%;
+      height: auto;
+      margin-bottom: 20vh;
+      display: grid;
+      width: 100%;
+      height: 100vh;
+      grid-template-columns: 80%;
+      grid-template-rows: repeat(12, 50%);
+      grid-gap: 2%;
+      justify-content: center; }
+      body main article nav {
+        background-color: white;
+        box-sizing: border-box;
+        border: 2px solid #fee9ff;
+        border-radius: 7px; }
+        body main article nav a {
+          text-decoration: none; }
+          body main article nav a .foto-Producto {
+            box-sizing: border-box;
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 65%; }
+          body main article nav a .descripcion-prod {
+            display: block;
+            text-align: center;
+            box-sizing: border-box;
+            line-height: 1.8;
+            width: 100%;
+            height: 35%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; }
+            body main article nav a .descripcion-prod .product-tittle {
+              font-weight: bold;
+              font-family: balboa,sans-serif;
+              font-weight: 500;
+              font-style: normal;
+              font-size: 15px;
+              color: black; }
+            body main article nav a .descripcion-prod .product-desc {
+              font-family: rift-soft,sans-serif;
+              font-weight: 300;
+              font-style: normal;
+              font-size: 11px;
+              color: black; }
+            body main article nav a .descripcion-prod .product-price {
+              font-family: rift-soft,sans-serif;
+              font-weight: 300;
+              font-style: normal;
+              font-size: 15px;
+              color: black; }
+            body main article nav a .descripcion-prod .product-fee {
+              font-weight: bold;
+              font-family: balboa,sans-serif;
+              font-weight: 500;
+              font-style: normal;
+              font-size: 12px;
+              color: black; }
+  body footer {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center; }
-    header .loginCarrito img {
-      width: 40px;
-      padding: 2px; }
-
-main {
-  display: none; }
-
-footer {
-  display: none; }
+    justify-content: flex-start;
+    background-color: white;
+    border-top: 1px solid #dfdddd;
+    height: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative; }
+    body footer img {
+      width: 30px;
+      padding-left: 5px; }
+    body footer p {
+      font-weight: bold;
+      padding-bottom: 5%;
+      font-size: 12px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif; }
+    body footer a {
+      text-decoration: none; }
+    body footer li {
+      list-style: none; }
+    body footer nav {
+      width: 25%; }
+    body footer div {
+      width: 25%; }
 
 @media (min-width: 768px) {
+  /* RESPONSIVE PARA DESKTOP */
   header {
     display: grid;
     grid-template-columns: 10% 70% 20%;
