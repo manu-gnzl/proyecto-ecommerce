@@ -59,7 +59,8 @@ body {
       justify-items: center;
       justify-content: center;
       text-decoration: none;
-      color: white;
+      color: #000000;
+      /* USO MAP */
       background-color: black;
       padding: 2%;
       font-weight: bold;
@@ -84,11 +85,15 @@ body {
       justify-items: center;
       justify-content: center;
       text-decoration: none;
-      color: #030303;
+      color: #000000;
+      /* USO MAP */
       padding: 2%;
-      font-weight: bold;
-      font-family: prohibition,sans-serif;
+      list-style: none;
+      text-decoration: none;
       font-size: 1.2rem;
+      font-family: sans-serif;
+      font-weight: boldt;
+      /* USO MIXIN */
       font-style: normal;
       background: #ffe1fc;
       background: linear-gradient(180deg, white 15%, #ffe1fc 43%, white 85%); }
@@ -115,21 +120,19 @@ body {
         display: flex;
         justify-content: center;
         align-items: center; }
-        body main section a p {
+        body main section a p, body main section a .p_sale {
           background-color: white;
           padding: 3% 5% 3% 5%;
+          list-style: none;
+          text-decoration: none;
           font-size: 70%;
-          font-family: anton,sans-serif;
+          font-family: sans-serif;
           font-weight: 400;
+          /* USO MIXIN */
           font-style: normal; }
         body main section a .p_sale {
           color: red;
-          background-color: white;
-          padding: 3% 5% 3% 5%;
-          font-size: 70%;
-          font-family: anton,sans-serif;
-          font-weight: 400;
-          font-style: normal; }
+          /* USO EXTENDED */ }
     body main h1 {
       /* TITULO Productos destacados */
       font-size: 1.5rem;
@@ -172,17 +175,23 @@ body {
             align-items: center;
             justify-content: center; }
             body main article nav a .descripcion-prod .product-tittle {
-              font-weight: bold;
-              font-family: balboa,sans-serif;
+              /* APLICO MIXIN */
+              list-style: none;
+              text-decoration: none;
+              font-size: 15px;
+              font-family: sans-serif;
               font-weight: 500;
               font-style: normal;
-              font-size: 15px;
               color: black; }
             body main article nav a .descripcion-prod .product-desc {
-              font-family: rift-soft,sans-serif;
-              font-weight: 300;
-              font-style: normal;
+              /* APLICO MIXIN */
+              list-style: none;
+              text-decoration: none;
               font-size: 11px;
+              font-family: sans-serif;
+              font-weight: boldt;
+              font-family: rift-soft,sans-serif;
+              font-style: normal;
               color: black; }
             body main article nav a .descripcion-prod .product-price {
               font-family: rift-soft,sans-serif;
@@ -210,7 +219,7 @@ body {
     body footer img {
       width: 30px;
       padding-left: 5px; }
-    body footer p {
+    body footer p, body footer main section a .p_sale, body main section a footer .p_sale {
       font-weight: bold;
       padding-bottom: 5%;
       font-size: 12px;
@@ -261,7 +270,8 @@ body {
           header .menuHamb-Lista .menuDesktop a span {
             color: black; }
           header .menuHamb-Lista .menuDesktop a :hover {
-            color: #fca4f4; }
+            color: #fca4f4;
+            /* aplico map map-get */ }
     header .logoHeader {
       /* Logo */
       display: flex;

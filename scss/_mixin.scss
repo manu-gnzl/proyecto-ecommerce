@@ -1,0 +1,7 @@
+@mixin formatoTexto($fontSize, $fuente, $weight) {
+    list-style: none;
+    text-decoration: none;
+    font-size: $fontSize;
+    font-family: $fuente;
+    font-weight: $weight;
+ }
