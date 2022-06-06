@@ -167,13 +167,16 @@ body {
                 p   {
                     background-color: white;
                     padding: 3% 5% 3% 5%;
-                    @include formatoTexto(70%, sans-serif, 400);        /* USO MIXIN */
+                    @include formatoTexto(70%, sans-serif, 400);        
                     font-style: normal;
                 }
     
                 .p_sale {
                     color: red;
-                    @extend p;                  /* USO EXTENDED */
+                    background-color: white;
+                    padding: 3% 5% 3% 5%;
+                    @include formatoTexto(70%, sans-serif, 400);     
+                    font-style: normal;
                 }
             }
         }
@@ -333,3 +336,320 @@ body {
     
     }
 }
+
+
+@media (min-width:768px) {   /* RESPONSIVE PARA DESKTOP */
+
+    body {
+     header {
+         display: grid;
+         grid-template-columns: 10% 80% 10%;
+         grid-template-rows: 10vw;
+         width: 100%;
+         height: 10vw;
+         a {
+             text-decoration: none;
+             color: none;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+         }
+         div {
+             width: 100%;
+             height: 100%;
+         }
+         .menuHamb-Lista    {              /* menu hamburguesa */
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             order: 1;
+             img {
+                 width: 50%;
+                 height: 50%;
+                 display: none;
+             }
+             .menuDesktop {
+                 display: inline-flex;
+                 justify-content: center;
+                 align-items: center;
+                 a {
+                     padding: 5px;
+                     span {
+                         color: black;                  
+                     }
+                     :hover {
+                         color: map-get($color, rosaHover);                        /* aplico map map-get */
+                     }
+                 }
+             }
+         }
+     
+         .logoHeader    {              /* Logo */
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             order: -1
+             a {
+                 width: 100%;
+                 height: 100%;
+             }
+             img {
+                 width: 50%;    
+             }
+         }
+     
+         .loginCarrito    {                  /* LogIn y Carrito */
+             display: flex;
+             flex-direction: row;
+             justify-content: center;
+             align-items: center;
+             order: 2;
+             img {
+                 width: 40px;
+                 padding: 2px;
+             }
+         }
+     }
+ 
+     main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    
+        section {             /* CATEGORIAS */
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 10px;
+            
+            .cat__ind {
+                grid-area: 1 / 1 / 2 / 2;
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+            }
+
+            .cat__calz {
+                grid-area: 1 / 2 / 2 / 3;
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+            }
+
+            .cat__acce {
+                grid-area: 1 / 3 / 2 / 4; 
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+            }
+
+            .cat__sale {
+                grid-area: 2 / 1 / 3 / 4; 
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+            }
+
+            a {
+                min-width: 40%;
+                min-height: 50%;
+                flex-grow: 1;
+                flex-basis: 0;
+                height: 30%;
+                text-decoration: none;
+                background-size: cover;
+                background-position: center;
+                margin: 1%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                p   {
+                    background-color: white;
+                    padding: 3% 5% 3% 5%;
+                    @include formatoTexto(70%, sans-serif, 400);   
+                    font-style: normal;
+                }
+    
+                .p_sale {
+                    color: red;
+                    background-color: white;
+                    @include formatoTexto(70%, sans-serif, 400);   
+                    font-style: normal;
+                }
+            }
+        }
+    
+        h1 {                /* TITULO Productos destacados */
+            font-size: 1.5rem;
+            text-align: center;
+            padding: 3%;
+        }
+    
+        article {           /* Productos destacados */
+            width: 100%;
+            height: 150vh;
+            margin-bottom: 5vh;
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            grid-gap: 10px;
+            justify-content: center;
+    
+            nav {
+                background-color: white;
+                box-sizing: border-box;
+                height: 75vh;
+                border: 2px solid rgb(254, 233, 255);
+                border-radius: 7px;
+    
+                a {
+                    text-decoration: none;
+    
+                    .foto-Producto {
+                        box-sizing: border-box;
+                        background-size: cover;
+                        background-position: center;
+                        width: 100%;
+                        height: 50vh;
+                    }
+    
+                    .descripcion-prod {
+                        display: block;
+                        text-align: center;
+                        box-sizing: border-box;
+                        line-height: 1.8;
+                        width: 100%;
+                        height: 15vh;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+    
+                        .product-tittle {                               /* APLICO MIXIN */
+                            @include formatoTexto(15px, sans-serif, 500);
+                            font-style: normal;
+                            color: black;
+                        }
+    
+                        .product-desc {                               /* APLICO MIXIN */
+                            @include formatoTexto(11px, sans-serif, boldt);
+                            font-family: rift-soft,sans-serif;
+                            font-style: normal;
+                            color: black;
+                        }
+    
+                        .product-price {
+                            font-family: rift-soft,sans-serif;
+                            font-weight: 300;
+                            font-style: normal;
+                            font-size: 15px;
+                            color: black;
+                        }
+    
+                        .product-fee {
+                            font-weight: bold;
+                            font-family: balboa,sans-serif;
+                            font-weight: 500;
+                            font-style: normal;
+                            font-size: 12px;
+                            color: black;
+                        }
+                    }
+                }
+    
+    
+            }
+        }
+    }
+
+     footer {
+         display: grid;
+         grid-template-columns: auto auto auto auto;
+         gap: 10px;
+         padding: 10px;
+ 
+         .footer__navegacion { 
+            order: -1;
+            width: 100%;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            margin: auto;
+            grid-area: 1 / 1 / 2 / 2;
+        }
+
+         .footer__rrss { 
+            background-color: transparent;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            margin: auto;
+            grid-area: 1 / 2 / 2 / 3; 
+        }
+
+        .footer__pagos { 
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            margin: auto;
+            gap: 10px;
+            grid-area: 1 / 3 / 2 / 4;
+        }
+        .footer__envios { 
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            margin: auto;
+            gap: 10px;
+            grid-area: 1 / 4 / 2 / 5; 
+        }
+        .footer__copy { 
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background-color: antiquewhite;
+            grid-area: 2 / 1 / 3 / 5; 
+        }
+ 
+         img { 
+             width: 30px;
+             padding-left: 5px;
+         }
+     
+         p {
+             font-weight: bold;
+             padding-bottom: 5%;
+             font-size: 12px;
+             font-family:Verdana, Geneva, Tahoma, sans-serif
+         }
+     
+         a {
+             text-decoration: none;        
+         }
+     
+         li {
+             list-style: none;
+         }
+     
+         div {
+             width: 25%;
+         }
+     }
+ }
+ 
+ }  
