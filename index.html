@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
 
-
-
   <head>
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -64,25 +62,26 @@
       </div>
       
       <section>       <!-- CATEGORIAS -->
-        <a href="#" style="background-image: url(./images/indumentaria.jpg);">
+
+        <a href="#" style="background-image: url(./images/indumentaria.jpg);" class="cat__ind">
           <p >
             INDUMENTARIA
           </p>
         </a>
 
-        <a href="#" style="background-image: url(./images/calzados.jpg);">
+        <a href="#" style="background-image: url(./images/calzados.jpg);" class="cat__calz">
           <p >
             CALZADOS
           </p>
         </a>
 
-        <a href="#" style="background-image: url(./images/accesorios.jpg);">
+        <a href="#" style="background-image: url(./images/accesorios.jpg);" class="cat__acce">
           <p >
             ACCESORIOS
           </p>
         </a>
 
-        <a href="#" style="background-image: url(./images/sale.jpg);">
+        <a href="#" style="background-image: url(./images/sale.jpg);" class="cat__sale">
           <p class="p_sale">
             SALE
           </p>
@@ -94,7 +93,7 @@
 
 
       <article> <!-- GRID DE PRODUCTOS -->
-            <nav class="cuadro-product-img-text">
+            <nav>
               <a href="#">
                 <div class="foto-Producto" style="background-image: url(./images/product1.jpg);">
                 </div>
@@ -107,7 +106,7 @@
               </a>
             </nav>
 
-            <nav class="cuadro-product-img-text">
+            <nav>
               <a href="#">
                 <div class="foto-Producto" style="background-image: url(./images/product2.jpg);">
                 </div>
@@ -120,7 +119,7 @@
               </a>
             </nav>
 
-            <nav class="cuadro-product-img-text-responsive">
+            <nav>
               <a href="#">
                 <div class="foto-Producto" style="background-image: url(./images/product3.jpg);">
                 </div>
@@ -133,7 +132,7 @@
               </a>
             </nav>
 
-            <nav class="cuadro-product-img-text-responsive">
+            <nav>
               <a href="#">
                 <div class="foto-Producto" style="background-image: url(./images/product4.jpg);">
                 </div>
@@ -146,7 +145,7 @@
               </a>
             </nav>
 
-            <nav class="cuadro-product-img-text-responsive">
+            <nav>
               <a href="#">
                 <div class="foto-Producto" style="background-image: url(./images/product5.jpg);">
                 </div>
@@ -159,7 +158,7 @@
               </a>
             </nav>
 
-            <nav class="cuadro-product-img-text-responsive">
+            <nav>
               <a href="#">
                 <div class="foto-Producto" style="background-image: url(./images/product6.jpg);">
                 </div>
@@ -172,51 +171,77 @@
               </a>
             </nav>
             
-        </article>
+      </article>
 
 
     </main>
 
     <footer>
-        <nav>
+        <nav class="footer__rrss">                  <!-- REDES SOCIALES -->
+          <p>SEGUINOS EN NUESTRAS REDES SOCIALES</p>
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="./images/fbk-icon.png" alt="Nuestro facebook">
+          </a>
+
+          <a href="https://www.instagram.com/" target="_blank">
+            <img src="./images/insta-icon.png" alt="Nuestro instagram">
+          </a>
+        </nav>
+
+        <nav class="footer__navegacion">                 <!-- NAVEGACION -->
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="./pages/productos.html">Productos</a></li>
-                <li><a href="./pages/locales.html">Locales</a></li>
-                <li><a href="./pages/contactanos.html">Contactanos</a></li>                 
+                <li>
+                  <a href="index.html">
+                    Inicio
+                  </a>
+                </li>
+
+                <li>
+                  <a href="./pages/productos.html">
+                    Productos
+                  </a>
+                </li>
+
+                <li>
+                  <a href="./pages/locales.html">
+                    Locales
+                  </a>
+                </li>
+
+                <li>
+                  <a href="./pages/contactanos.html">
+                    Contactanos
+                  </a>
+                </li>                 
             </ul>
         </nav>
 
-        <nav>
-            <p>Redes Sociales</p>
-            <ul class="footer__nolist--row">
-                <li><a href="https://www.facebook.com/" target="_blank"><img src="./images/fbk-icon.png" alt="Nuestro facebook" class="footer__section--icons"></a></li>
-                <li><a href="https://www.instagram.com/" target="_blank"><img src="./images/insta-icon.png" alt="Nuestro instagram" class="footer__section--icons"></a></li>
-            </ul>
-        </nav>
-
-        <div>
+        <div class="footer__pagos">                  <!-- PAGOS -->
             <p>Medios de pago</p>
-            <ul class="footer__nolist--row">
-                <li><img src="./images/visa.png" alt="Visa"></li>
-                <li><img src="./images/mastercard.png" alt="Mastercard"></li>
-                <li><img src="./images/meli.png" alt="Mercado pago"></li>
-            </ul>
+
+            <img src="./images/visa.png" alt="Visa">
+
+            <img src="./images/mastercard.png" alt="Mastercard">
+
+            <img src="./images/meli.png" alt="Mercado pago">
         </div>
 
-        <div>
+        <div class="footer__envios">                  <!-- ENVIOS -->
             <p>Formas de envio</p>
-            <ul class="footer__nolist--row">
-                <li><img src="./images/correoarg.png" alt="Correo argentino"></li>
-                <li><img src="./images/motomensaje.png" alt="Motomensajeria"></li>
-                <li><img src="./images/encomienda.png" alt="Encomienda"></li>
-            </ul>
+
+            <div class="footer__envios--img">
+                  <img src="./images/correoarg.png" alt="Correo argentino">
+
+                  <img src="./images/motomensaje.png" alt="Motomensajeria">
+
+                  <img src="./images/encomienda.png" alt="Encomienda">
+            </div>
         </div>
 
       <div class="footer__copy">
           Copyright Juan Manuel Gonzalez - 2022
       </div>
-  </footer>
+    </footer>
 
   </body>
 
